@@ -9,10 +9,13 @@ packages = [{include = "duck_iceberg_demo"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 duckdb = "^1.0.0"
-pyiceberg = "^0.6.1"
+pyiceberg = {extras = ["gcsfs"], version = "^0.6.1"}
 sqlalchemy = "^2.0.31"
 pyarrow = "^16.1.0"
 pandas = "^2.2.2"
+psycopg2 = "^2.9.9"
+flask = "^3.0.3"
+google-cloud-secret-manager = "^2.20.1"
 
 
 [tool.poetry.group.dev.dependencies]

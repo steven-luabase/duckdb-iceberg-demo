@@ -1,1 +1,3 @@
 .venv/
+/duck_iceberg_demo/deploy_duckdb/**.ipynb
+**/__pycache__/
