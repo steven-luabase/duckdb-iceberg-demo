@@ -20,15 +20,16 @@ aws sso login
 ####  Using Flask
 `python main.py`
 #### In Docker
+Build with linux/amd64 architecture to be compatible with AWS ECS.
 ```
-docker build -t duckdb-deploy .
+docker buildx build --platform=linux/amd64  -t duckdb-deploy .
 ```
 ```
 docker run -p 5000:5000 -v ~/.aws:/root/.aws -it duckdb-deploy
 ```
 
 ## Deploy the app to AWS ECS
-See blog post: 
+See blog post: [**Running Iceberg and Serverless DuckDB in AWS**](https://www.definite.app/blog/cloud-iceberg-duckdb-aws)
 
 ## Query Files in S3
 ```
