@@ -11,6 +11,16 @@ HMAC_SECRET_KEY_NAME = "<YOUR_HMAC_SECRET_KEY_NAME>"
 ```
 Create an HMAC key and secret for your Google Cloud Storage buckets [here](https://cloud.google.com/storage/docs/authentication/managing-hmackeys#create). Store your HMAC secret in Google Secrets Manager and put the name of the secret as HMAC_SECRET_KEY_NAME and the HMAC key as HMAC_KEY in `config.py`
 
+## Running Locally
+You may need to authenticate with `gcloud` CLI first:
+```
+gcloud auth login
+```
+Then run:
+```
+python main.py
+```
+
 ## Deploy the app to Cloud Run
 ```
 bash build_cloud_run.sh

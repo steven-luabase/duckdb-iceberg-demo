@@ -1,3 +1,5 @@
 .venv/
-/duck_iceberg_demo/deploy_duckdb/**.ipynb
+/duck_iceberg_demo/deploy_duckdb_gcp/**.ipynb
+/duck_iceberg_demo/deploy_duckdb_aws/**.ipynb
 **/__pycache__/
+**/.DS_Store
